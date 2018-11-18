@@ -117,12 +117,12 @@ img {vertical-align: middle;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -132,28 +132,28 @@ img {vertical-align: middle;}
 }
 </style>
 
- 
+
 </head>
 
 <body>
 
- 
+
   <header id="header" class="header-scrolled" background="black">
     <div class="container-fluid">
-    <div id="logo" class="pull-left"><h1><font color="white" size="200px">BLP</font></h1></div>
+    <div id="logo" class="pull-left"><h1><img src="dbsi.png" alt="" align="left" ><font color="white" size="200px">BLP</font></h1></div>
       </div>
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-	  
+
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Add Books</a></li>
-        
+
           <li><a href="#contact">Contact</a></li>
           <!--buttons of register and login-->
-         
+
           <li><a href="signup/signup.html" target="_blank"><button type="button" class="btn btn-danger btn-lg" style="border-radius: 24px;padding:3px;">Register</button></a></li>
-          
+
           <li><a href="login/login.html" target="_blank"><button type="button" class="btn btn-danger btn-lg" style="
 	border-radius: 24px;padding:3px;">Login</button></a></li>
 		<!-- done with buttons of register and login-->
@@ -188,9 +188,9 @@ img {vertical-align: middle;}
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
 <script>
@@ -209,15 +209,15 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 </script>
