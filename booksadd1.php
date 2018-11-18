@@ -11,7 +11,7 @@ session_start();
     $rent=$_POST['rent'];
     $publisher=$_POST['publisher'];
     $image=$_POST['image'];
-    $sql="INSERT INTO ADDBOOKS"."(usrname,bookname,author,edition,category,rent,publisher,image)"."VALUES"."('$username','$bookname','$author','$edition','$category','$rent',$publisher','$image')";
+    $sql="INSERT INTO ADDBOOKS"."(username,bookname,author,edition,category,rent,publisher,image)"."VALUES"."('$username','$bookname','$author','$edition','$category','$rent',$publisher','$image')";
     $retval=mysql_query($conn,$sql);
     
 mysqli_close($conn);
