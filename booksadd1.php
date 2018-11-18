@@ -2,11 +2,10 @@
 $userid=$_SESSION["userid"];
 require_once("DBConn.php");
 session_start();
-	$name=$_POST['username'];
+	$username=$userid;
 	$bookname=$_POST['bookname'];
 	$author=$_POST['author'];
     $edition=$_POST['edition'];
-    $isdn=$_POST['isbn'];
     $publisher=$_POST['publisher'];
     $category=$_POST['category'];
     $rent=$_POST['rent'];
